@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-int sumTwo(int a, int b)
+void square( int a )
 {
-	int result;
-	result=a+b;
-	return result;
+	a = a*a;
+	
 }
 
-int main(void)
+int main()
 {
-	printf("result is %d", sumTwo(3, 7));
-	
-	return 0;
+	int a = 2;
+	square(a);
+	printf("a=%i\n", a);
 }
