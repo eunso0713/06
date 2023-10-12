@@ -1,15 +1,15 @@
+#include <stdio.h>
 
- #include <stdio.h>
-
-void func1(void) {
-	int x;
-	printf("func1 x is at %p\n", &x);
+int sumTwo(int a, int b)
+{
+	int result;
+	result=a+b;
+	return result;
 }
 
-int main(void) {
-	int x;
-	printf("main x is at %p\n", &x);
-	func();
+int main(void)
+{
+	printf("result is %d", sumTwo(3, 7));
 	
 	return 0;
 }
